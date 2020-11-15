@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">
+            Lok Sabha Election 2019 Survey Form
+        </h1>
+
+        <p id="description">
+            Thank You for taking the time to improve the platform
+        </p>
+
+
+        <div class="form_class">
+            <form id="survey-form" action="poll_result.php">
+                
+                <div class="input1">
+                    <label for="name" id="name-label">Name</label><br>
+                    <input type="text" id="name" placeholder="Enter your name" required><br><br>
+                </div>
+                
+                <div class="input2">
+                    <label for="email" id="email-label">Email</label><br>
+                    <input type="email" id="email" placeholder="xxx@yyy.com" required><br><br>  
+                </div>
+
+                <div class="input3">
+                    <label for="number" id="number-label">Age(Optional)</label><br>
+                    <input type="number" id="number" placeholder="Enter you Age" min="1" max="100"><br><br>
+                </div>
+
+                <div class="input4">
+                    <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+                    <select name="dropdown" id="dropdown">
+                        <option disabled selected value>Select an option</option>
+                        <option value="student">Student</option>
+                        <option value="Businessmen">Businessmen</option>
+                        <option value="Civil Servant">Civil Servant</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="others">Others</option>
+                      </select><br><br>
+                    
+                </div>
+
+                <div class="input5">
+                    <label>Do you think that Modi government would come once again?</label><br><br>
+
+                    <input type="radio" name="government" id="Modi">
+                    <label for="Modi" name="government">Definitely</label><br>
+                    
+                    <input type="radio" name="government" id="NotModi">
+                    <label for="NotModi" name="government">Not at all</label><br>
+                    
+
+                    <input type="radio" name="government" id="DontKnow">
+                    <label for="DontKnow" name="government">Dont Know </label><br><br>
+                    
+                </div>
+
+                <div class="input6">
+                    <label for="dropdown1" id="dropdown1-label">What work did you like of the ongoing government?</label><br>
+                    <select id="dropdown1" name="dropdown1">
+                        <option disabled selected value>Select an option</option>
+                        <option value="Mandation of Aadhar Card for each Individual">Mandation of Aadhar Card for each Individual</option>
+                        <option value="Rural Electrification">Rural Electrification</option>
+                        <option value="Making of the Statue of Unity">Making of the Statue of Unity</option>
+                        <option value="Demonetisation">Demonetisation</option>
+                        <option value="All of these">All of these</option>
+                    </select><br><br>
+                </div>
+
+
+                <div class="input8">
+                    <label>What would you like to see improved? (Check all that apply)</label><br>
+                    <input type="checkbox" id="checkbox1" name="checkbox-name">
+                    <label for="checkbox1">Improve Economic Stability</label><br>
+
+                    <input type="checkbox" id="checkbox2" name="checkbox-name">
+                    <label for="checkbox2">Reduce Corruption</label><br>
+
+                    <input type="checkbox" id="checkbox3" name="checkbox-name">
+                    <label for="checkbox3">Improve secular culture</label><br>
+
+                    <input type="checkbox" id="checkbox4" name="checkbox-name">
+                    <label for="checkbox4">Increase Educational facilities</label><br>
+
+                    <input type="checkbox" id="checkbox5" name="checkbox-name">
+                    <label for="checkbox5">Improve Drinking Water Facilities </label><br>
+
+                    <input type="checkbox" id="checkbox6" name="checkbox-name">
+                    <label for="checkbox6">Reduce tax</label><br>
+
+                    <input type="checkbox" id="checkbox7" name="checkbox-name">
+                    <label for="checkbox7">All of these</label><br><br>
+
+                </div>
+
+                <div class="input7">
+                    <label for="comments" name="comment-label">Any Comments or Suggestions?</label><br>
+                    <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea><br><br>
+                </div>
+
+
+                <button type="submit" id="submit">Submit</button>
+                
+
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>
