@@ -31,8 +31,8 @@ body{
 }
 
 .form_class{
-    /*border: 1px solid red;*/
-    padding: 5px 5px 5px 5px;;
+    
+    padding: 5%;
     height: 80%;
     width: 80%;
     
@@ -117,4 +117,16 @@ label{
 
 #submit:hover{
     transform: scale(1.1);
+}
+
+@media(max-width: 550px){
+    .form_class{
+        width: 100%;
+    }
+    #comments{
+        width: 70%;
+    }
+    #survey-form{
+        width: 70%;
+    }
 }
